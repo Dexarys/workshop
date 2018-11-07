@@ -1,7 +1,7 @@
 import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
-import KittenController from './controller/kittenController';
+import AxaController from './controller/axaController';
 
 
 export default class Server {
@@ -24,17 +24,9 @@ export default class Server {
 
     _initControllers()
     {
-        const kittenController = new KittenController();
+        const axaController = new AxaController();
 
-        this._app.get('/', kittenController.index.bind(kittenController));
-        this._app.get('/kittens', kittenController.getKittens.bind(kittenController));
-        this._app.post('/kittens/create', kittenController.createKitten.bind(kittenController));
-        this._app.post('/kittens/get', kittenController.getKittenByName.bind(kittenController));
-        this._app.put('/kittens/update', kittenController.updateKitten.bind(kittenController));
-        this._app.delete('/kittens/delete', kittenController.killKitten.bind(kittenController));
-        this._app.put('/kittens/flea/add', kittenController.addFlea.bind(kittenController));
-        this._app.put('/kittens/flea/remove', kittenController.removeFlea.bind(kittenController));
-        this._app.delete('/kittens/genocide', kittenController.genocide.bind(kittenController));
+        this._app.get('/', axaController.index.bind(axaController));
     }
 
     run()

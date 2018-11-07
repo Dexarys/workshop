@@ -1,82 +1,58 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
-
 html {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 body {
-    background: #fff;
-    font-family:'Roboto', sans-serif;
+    font-family:'Arial', sans-serif;
     font-weight: 300;
-    color: #454545; font-size:15px;
+    color: rgb(69, 69, 69); 
+    font-size:15px;
     line-height: 26px;
-    font-family: 'Roboto', sans-serif;
-}
-#login, #entreprise, #register-card {
-    display:none;
+    margin: 0;
+    padding: 0;
 }
 
-#error, #success {
-    position: absolute;
-    top: 15px;
-    left: 50%;
+.header {
+    max-height: 60px;
+    min-height: 60px;
+    margin: 0;
+    border-bottom: 2px solid rgb(187, 2, 2);
 }
 
-#error_msg {
-    width: 250px;
-    display: block;
-    margin: auto;
-    background-color: #f5f5f5;
-    color: #ac2925;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: -50%;
-    border-radius: 2px;
+.logo-title {
+    margin-left: 10px;
 }
 
-#success_msg {
-    width: 250px;
-    display: block;
-    margin: auto;
-    background-color: #f5f5f5;
-    color: #4cae4c;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: -50%;
-    border-radius: 2px;
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.login-card .card {
-    padding: 40px;
-    width: 274px;
-    margin: 0 auto 10px;
-    border-radius: 2px;
-    overflow: hidden;
-    margin-top:100px;
-}
-.register-card .card {
-    padding: 20px;
-    margin: 0 auto 10px;
-    border-radius: 2px;
-    overflow: hidden;
-    margin-top:50px;
-}
-.login-help {
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-}
-.login-help a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 400;
-    text-align: center;
-    display: inline-block;
-    opacity: 0.6;
-    transition: opacity ease 0.5s;
+aside {
+    width: 30%;
 }
 
-.p_label {
-    font-weight: bold;
+section {
+    width: 60%;
+}
+
+button {
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr th {
+    height: 30px;
+    padding: 5px;
+}
+
+tr td {
+    height: 25px;
+    padding: 5px;
 }
