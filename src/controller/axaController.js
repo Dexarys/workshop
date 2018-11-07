@@ -14,4 +14,12 @@ export default class AxaController {
     index(req, res) {
         res.render('index');
     }
+
+    history(req, res) {
+        res.render('history');
+    }
+
+    buy(req, res) {
+        res.render('buy');
+    }
 }

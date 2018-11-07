@@ -56,3 +56,16 @@ tr td {
     height: 25px;
     padding: 5px;
 }
+
+
+.card {
+    height: 250px;
+    min-width: 250px;
+    margin: 10px;
+    background: rgb(248, 248, 248);
+    box-shadow: 0 10px 0 10px #ccc;
+}
+.card-link {
+    height: 100%;
+    width: 100%;
+}

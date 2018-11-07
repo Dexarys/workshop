@@ -24,9 +24,17 @@ export default class Server {
 
     _initControllers()
     {
-        const axaController = new AxaController();
-
-        this._app.get('/', axaController.index.bind(axaController));
+        return new Promise((resolve, reject) => {
+            try {
+                const axaController = new AxaController();
+                this._app.get('/', axaController.index.bind(axaController));
+                this._app.get('/history', axaController.history.bind(axaController));
+                this._app.get('/buy', axaController.buy.bind(axaController));
+                resolve();
+            } catch(err) {
+                reject(err);
+            }
+        })
     }
 
     run()
