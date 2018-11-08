@@ -30,6 +30,7 @@ export default class Server {
                 this._app.get('/', axaController.index.bind(axaController));
                 this._app.get('/history', axaController.history.bind(axaController));
                 this._app.get('/buy', axaController.buy.bind(axaController));
+                this._app.post('/', axaController.delay.bind(axaController));
                 resolve();
             } catch(err) {
                 reject(err);

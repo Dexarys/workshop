@@ -20,6 +20,10 @@ export default class AxaController {
     }
 
     buy(req, res) {
-        res.render('buy');
+        res.render('buyContract');
+    }
+
+    delay(req, res) {
+
     }
 }
