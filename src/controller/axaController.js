@@ -24,6 +24,10 @@ export default class AxaController {
     }
 
     delay(req, res) {
-
+        console.log("BODY");
+        console.log(req.body);
+        console.log("PARAMS");
+        console.log(req.params);
+        res.json({msg: "TOTO"});
     }
 }

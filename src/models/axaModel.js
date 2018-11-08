@@ -7,4 +7,4 @@ const AxaSchema = new Schema(
         numContrat: {type: String, required: true, unique: true}
     });
 
-module.exports = mongoose.model('Kitten', AxaSchema);
+module.exports = mongoose.model('Axa', AxaSchema);
